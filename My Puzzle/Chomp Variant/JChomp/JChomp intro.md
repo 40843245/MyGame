@@ -32,22 +32,23 @@ One must select a block. Eat the selected block together with those that are bel
 It is impossible to draw in Chomp.
 
 ## intro to JChromp:
-1.With pl players.
-2.Given n1 * n2 blocks of chocolate (To make it brief, I will call one block of chocolate as one block).
+1. With pl players.
+2. Given n1 * n2 blocks of chocolate (To make it brief, I will call one block of chocolate as one block).
 where there are P poison blocks P={(x1,y1),...,(xp,yp)}
 
-3.One must select a block.If possible, we call it is a valid selection,
+3. One must select a block.If possible, we call it is a valid selection,
 eat the selected block together with those who are below it within e1 rows and right it within e2 columns.
 If NOT possible, then we call it is invalid selection,
 reselect a block (the selected block together with those will NOT be eaten).
 
-4.One who eat one or many poison blocks will lose the game.
+4. One who eat one or many poison blocks will lose the game.
 
-5.If there are NO any valid selections, the game ties.
+5. If there are NO any valid selections, the game ties.
 
 ## NOTE
 NOTE that
-1.For existence of the block,
+
+1. For existence of the block,
 We call the block DOES exist iff the block is NOT out of bound of the board and it has NOT been eaten.
 
 2. For definition of a valid selection, 
@@ -55,7 +56,7 @@ a valid selection for the block at point (x,y) refers the continuous blocks thos
 and are right e2 columns are BOTH exist (See the NOTE 1st point).
 For more details, see my examples in my note (.docx file)
 
-3.Pay a lot of attetntion of directions and coordinations.
+3. Pay a lot of attetntion of directions and coordinations.
 From up to down, the row and x-axis value are changed. When x-axis value increase 1 unit, the next row are increased by 1.
 From left to right, the col and y-axis value are changed. When y-axis value increase 1 unit, the next column are increased by 1.
 It is applied here and in my code.
