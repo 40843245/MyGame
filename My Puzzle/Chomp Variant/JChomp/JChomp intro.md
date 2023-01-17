@@ -66,6 +66,11 @@ From up to down, the row and x-axis value are changed. When x-axis value increas
 From left to right, the col and y-axis value are changed. When y-axis value increase 1 unit, the next column are increased by 1.
 It is applied here and in my code.
 
+5. In my code, 
+out of range are checked first, then blocks had been eaten, then poisoned blocks are eaten.
+
+out of range > blocks had been eaten > poisoned blocks are eaten
+
 For more details, see my figures in my note (.docx file)
 
 ## code
@@ -77,3 +82,7 @@ The Python will be place in GitHub.
 3. The row of eaten size can be an integer from 1 to  3, and so is the column of eaten size.
 4. The number of poisoned block must be between 1 and "min(4, the row of board size * the column of board size)".
 5. The position of poisoned block must NOT be out of bound of the board.
+
+# News
+## Release NOTE
+v2 : Chomp_Variant_v2(optimized) are put in GitHub in 2023/01/17 20:58 p.m.
