@@ -77,7 +77,7 @@ def InputPoisonBlock(upBound,boardRow,boardCol):
     
 def Input():
     numOfPlayer=InputPlayer(5,"player")
-    boardSize=InputBoardSize(10,10)
+    boardSize=InputBoardSize(15+1,15+1)
     (boardRow,boardCol)=boardSize
     poisonBlock=InputPoisonBlock(min(4,boardRow*boardCol),boardRow,boardCol)
     eatSize=InputEatSize(4,4)
